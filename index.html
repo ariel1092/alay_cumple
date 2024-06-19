@@ -11,26 +11,28 @@
 </head>
 <body>
     <div class="card">
-        <h1>¡Estás Invitado!</h1>
-        <p>Fecha: <span id="event-date">25 de Junio de 2024</span></p>
-        <p>Ubicación: <span id="event-location">San Lorenzo 1321 <span class="letra">oeste</span>, capital</span></p>
-        <p><a href="#" id="event-map-link">Ver Ubicación en Google Maps</a></p>
-        
-        <div id="countdown">
-            <h2>Cuenta regresiva:</h2>
-            <p id="timer"></p>
+        <div class="overlay">
+            <h1 class="title">¡Estás Invitado!</h1>
+            <p class="subtitle">Celebra con nosotros</p>
+            <div class="details">
+                <p><strong>Fecha:</strong> 26 de Junio, 18hs</p>
+                <p><strong>Ubicación:</strong> San Lorenzo 1321 oeste, capital</p>
+            </div>
+            <p class="cta"><a href="#" id="event-map-link">Ver Ubicación en Google Maps</a></p>
+            <div id="countdown">
+                <h2>Cuenta regresiva:</h2>
+                <p id="timer"></p>
+            </div>
+            <button id="rsvp-btn">Confirmar Asistencia</button>
+            <div id="rsvp-form" class="hidden">
+                <input type="text" id="name" placeholder="Tu nombre">
+                <input type="email" id="email" placeholder="Tu correo">
+                <button  id="submit-rsvp">Enviar</button>
+            </div>
+            <p class="enlace"><a href="galeria.html" id="photo-gallery-link">Ver Galería de Fotos</a></p>
         </div>
-        
-        <button id="rsvp-btn">Confirmar Asistencia</button>
-        <div id="rsvp-form" class="hidden">
-            <input type="text" id="name" placeholder="Tu nombre">
-            <input type="email" id="email" placeholder="Tu correo">
-            <button id="submit-rsvp">Enviar</button>
-        </div>
-        
-        <h2 class="enlace"><a href="galeria.html" id="photo-gallery-link">Ver Galería de Fotos</a></h2>
     </div>
-
     <script src="js/script.js"></script>
+
 </body>
 </html>
